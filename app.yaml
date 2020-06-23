@@ -1,0 +1,13 @@
+runtime: python38
+entrypoint: gunicorn --workers 1 main:app
+
+handlers:
+  - url: /.*
+    secure: always
+    script: auto
+
+env_variables:
+  API_KEY:
+  SECRET_KEY:
+  ENV_NAME:
+  BOT_TOKEN:

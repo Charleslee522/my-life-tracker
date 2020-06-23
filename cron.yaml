@@ -1,0 +1,4 @@
+cron:
+- description: "summary job"
+  url: /noti
+  schedule: every 1 hours from 22:00 to 15:00
